@@ -1,0 +1,87 @@
+<h1 style="text-align: center; color: #4caf50">Sign In</h1>
+<form
+  (ngSubmit)="onSubmit()"
+  #signinForm="ngForm"
+  style="
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: auto;
+  "
+>
+  <label for="username" style="margin-bottom: 10px; color: #555"
+    >Username:</label
+  >
+  <input
+    type="text"
+    id="username"
+    name="username"
+    [(ngModel)]="signInData.username"
+    required
+    style="
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      width: 100%;
+    "
+  />
+
+  <label for="password" style="margin-bottom: 10px; color: #555"
+    >Password:</label
+  >
+  <input
+    type="password"
+    id="password"
+    name="password"
+    [(ngModel)]="signInData.password"
+    required
+    style="
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      width: 100%;
+    "
+  />
+
+  <button
+    type="submit"
+    style="
+      padding: 10px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 20px;
+      width: 100%;
+    "
+  >
+    Sign In
+  </button>
+  <hr style="width: 100%; margin: 20px 0" />
+  <button
+    type="button"
+    (click)="goToSignup()"
+    style="
+      padding: 10px;
+      background-color: #f44336;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    "
+  >
+    Signup
+  </button>
+</form>
+<div style="text-align: center; margin-top: 20px; color: #4caf50">
+  {{ responseMessage }}
+</div>

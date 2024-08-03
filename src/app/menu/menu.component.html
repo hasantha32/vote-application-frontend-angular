@@ -1,0 +1,89 @@
+<h1
+  style="
+    text-align: center;
+    color: #673ab7;
+    font-size: 28px;
+    margin-bottom: 30px;
+  "
+>
+  Welcome to the Menu
+</h1>
+<div
+  class="menu"
+  style="
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: auto;
+  "
+>
+  <a
+    href="App/CreateProfile"
+    style="
+      color: #673ab7;
+      text-decoration: none;
+      font-size: 18px;
+      margin-bottom: 20px;
+      padding: 10px 20px;
+      border: 1px solid #673ab7;
+      border-radius: 5px;
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+    "
+    >Create Profile</a
+  >
+  <a
+    href="App/makeVote"
+    style="
+      color: #673ab7;
+      text-decoration: none;
+      font-size: 18px;
+      margin-bottom: 20px;
+      padding: 10px 20px;
+      border: 1px solid #673ab7;
+      border-radius: 5px;
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+    "
+    >Make Vote</a
+  >
+  <a
+    href="App/voteSummary"
+    style="
+      color: #673ab7;
+      text-decoration: none;
+      font-size: 18px;
+      margin-bottom: 20px;
+      padding: 10px 20px;
+      border: 1px solid #673ab7;
+      border-radius: 5px;
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+    "
+    >Results</a
+  >
+  <button
+    (click)="logout()"
+    style="
+      padding: 10px 20px;
+      background-color: #673ab7;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+      width: 100%;
+      text-align: center;
+    "
+  >
+    Log Out
+  </button>
+</div>
